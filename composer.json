@@ -1,0 +1,25 @@
+{
+    "name": "diegoblz/buscador-cursos-al",
+    "description": "Buscador de cursos da alura",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Diego beleza",
+            "email": "diego.ab712@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/dom-crawler": "^5.4",
+        "symfony/css-selector": "^5.4"
+    },
+    "autoload" : {
+        
+        "files": ["./functions.php"],
+
+        "psr-4" : {
+            "Alura\\BuscadorDeCursos\\": "src/"
+        }
+    }
+}
