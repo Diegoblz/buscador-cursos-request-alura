@@ -4,8 +4,8 @@ namespace Alura\BuscadorDeCursos;
 use GuzzleHttp\ClientInterface;
 use Symfony\Component\DomCrawler\Crawler;
 
-class Buscador{
-
+class Buscador
+{
 
     private $httpClient;
 
@@ -18,8 +18,8 @@ class Buscador{
     }
 
 
-
-    public function buscar(string $url){
+    public function buscar(string $url)
+    {
         $resposta = $this->httpClient->request('GET', $url);
 
         $html = $resposta->getBody();
