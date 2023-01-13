@@ -43,5 +43,6 @@
     },
     "post-update-cmd": [
         "@test"
-    ]
+    ],
+    "bin": ["buscar-cursos.php"]
 }
